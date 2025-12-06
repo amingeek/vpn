@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اشتراک‌های ویژه اینترنت</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Vazirmatn', sans-serif;
+        }
+        
+        .price-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .price-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .price-badge {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+            margin: 15px 0;
+        }
+        
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            position: relative;
+            padding-right: 25px;
+        }
+        
+        .feature-list li:before {
+            content: "✓";
+            position: absolute;
+            right: 0;
+            color: #4ade80;
+            font-weight: bold;
+        }
+        
+        .unlimited-card {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .unlimited-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .plan-badge {
+            background: linear-gradient(135deg, #00b09b 0%, #96c93d 100%);
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        
+        .user-badge {
+            background: rgba(255,255,255,0.1);
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 11px;
+            margin-left: 5px;
+        }
+        
+        .location-badge {
+            display: inline-block;
+            background: rgba(255,255,255,0.1);
+            padding: 4px 8px;
+            border-radius: 10px;
+            margin: 2px;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-black min-h-screen text-white p-4">
+    
+    <div class="max-w-6xl mx-auto">
+        <!-- هدر -->
+        <header class="text-center mb-12 pt-8">
+            <h1 class="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                اشتراک‌های ویژه اینترنت پرسرعت
+            </h1>
+            <p class="text-gray-300 max-w-2xl mx-auto">
+                بهترین سرویس‌های اینترنت با بالاترین کیفیت و سرعت بی‌نظیر
+            </p>
+        </header>
+
+        <!-- بخش اول: سرویس‌های نامحدود -->
+        <div class="mb-16">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold mb-2 bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+                    🔋 سرویس‌های اینترنت نامحدود
+                </h2>
+                <p class="text-gray-300">سرویس‌های با ترافیک نامحدود و سرعت بالا</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <!-- یک ماهه -->
+                <div class="unlimited-card">
+                    <div class="plan-badge">⭐️ یک ماهه</div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center p-3 bg-white/10 rounded-lg">
+                            <span>تک کاربر</span>
+                            <span class="font-bold">۱۱۰,۰۰۰ تومان</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-white/10 rounded-lg">
+                            <span>دو کاربر</span>
+                            <span class="font-bold">۱۹۶,۰۰۰ تومان</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-white/10 rounded-lg">
+                            <span>سه کاربر</span>
+                            <span class="font-bold">۳۷۸,۰۰۰ تومان</span>
+                        </div>
+                    </div>
+                    <button class="mt-6 bg-white text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all w-full">
+                        خرید اشتراک
+                    </button>
+                </div>
+
+                <!-- سه ماهه -->
+                <div class="unlimited-card">
+                    <div class="plan-badge">⭐️ سه ماهه</div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center p-3 bg-white/10 rounded-lg">
+                            <span>تک کاربر</span>
+                            <span class="font-bold">۴۴۴,۰۰۰ تومان</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-white/10 rounded-lg">
+                            <span>دو کاربر</span>
+                            <span class="font-bold">۵۲۶,۰۰۰ تومان</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-white/10 rounded-lg">
+                            <span>سه کاربر</span>
+                            <span class="font-bold">۱,۰۲۱,۰۰۰ تومان</span>
+                        </div>
+                    </div>
+                    <button class="mt-6 bg-white text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all w-full">
+                        خرید اشتراک
+                    </button>
+                </div>
+
+                <!-- شش ماهه -->
+                <div class="unlimited-card">
+                    <div class="plan-badge">⭐️ شش ماهه</div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center p-3 bg-white/10 rounded-lg">
+                            <span>تک کاربر</span>
+                            <span class="font-bold">۸۲۳,۰۰۰ تومان</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-white/10 rounded-lg">
+                            <span>دو کاربر</span>
+                            <span class="font-bold">۱,۰۰۷,۰۰۰ تومان</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-white/10 rounded-lg">
+                            <span>سه کاربر</span>
+                            <span class="font-bold">۱,۹۳۱,۰۰۰ تومان</span>
+                        </div>
+                    </div>
+                    <button class="mt-6 bg-white text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all w-full">
+                        خرید اشتراک
+                    </button>
+                </div>
+
+                <!-- یکساله -->
+                <div class="unlimited-card">
+                    <div class="plan-badge">⭐️ یکساله</div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center p-3 bg-white/10 rounded-lg">
+                            <span>تک کاربر</span>
+                            <span class="font-bold">۱,۴۸۳,۰۰۰ تومان</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-white/10 rounded-lg">
+                            <span>دو کاربر</span>
+                            <span class="font-bold">۱,۶۴۸,۰۰۰ تومان</span>
+                        </div>
+                        <div class="flex justify-between items-center p-3 bg-white/10 rounded-lg">
+                            <span>سه کاربر</span>
+                            <span class="font-bold">۳,۲۹۸,۰۰۰ تومان</span>
+                        </div>
+                    </div>
+                    <button class="mt-6 bg-white text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all w-full">
+                        خرید اشتراک
+                    </button>
+                </div>
+            </div>
+            
+            <!-- لوکیشن‌ها و اطلاعات -->
+            <div class="bg-gray-800/50 rounded-xl p-6 mt-8">
+                <div class="text-center mb-4">
+                    <h3 class="text-xl font-bold mb-2">🌍 لوکیشن‌های موجود</h3>
+                    <div class="flex flex-wrap justify-center gap-2 mb-6">
+                        <span class="location-badge">🇩🇪 آلمان</span>
+                        <span class="location-badge">🇹🇷 ترکیه</span>
+                        <span class="location-badge">🇺🇸 آمریکا</span>
+                        <span class="location-badge">🇷🇺 روسیه</span>
+                        <span class="location-badge">🇳🇱 هلند</span>
+                        <span class="location-badge">🇦🇪 امارات</span>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <p class="text-gray-300 mb-4">
+                        جهت اطلاعات بیشتر، شرایط و مشاهده سوالات پر تکرار این مطلب را مطالعه بفرمایید:
+                    </p>
+                    <button class="bg-gradient-to-r from-blue-500 to-purple-600 px-8 py-3 rounded-lg hover:opacity-90 transition-all font-bold">
+                        مشاهده اطلاعات بیشتر
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- بخش دوم: اشتراک‌های قبلی با افزایش قیمت جدید -->
+        <div class="mb-16">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold mb-2 bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent">
+                    🚀 اشتراک‌های حجمی با ترافیک مشخص
+                </h2>
+                <p class="text-gray-300">سرویس‌های با حجم ترافیک مشخص و کیفیت فوق‌العاده</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- اشتراک 1 - 33% افزایش -->
+                <div class="price-card">
+                    <div class="text-center">
+                        <span class="text-sm bg-white/20 px-3 py-1 rounded-full">پرطرفدار</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-2">سوپر ویژه ۴لوکیشن ۱۵گیگ</h3>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <ul class="feature-list">
+                            <li>مدت اشتراک: ۳۰ روز</li>
+                            <li>حجم ترافیک: ۱۶٫۱۳۳ گیگابایت</li>
+                            <li>تعداد کاربر: نامحدود</li>
+                            <li>پورت: ۱ گیگابیت</li>
+                            <li>پشتیبانی: ۲۴ ساعته</li>
+                            <li>کانفیگ: OpenVPN + WireGuard</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <div class="price-badge">
+                            قیمت: ۴۰,۰۰۰ تومان
+                        </div>
+                        <button class="mt-6 bg-white text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all w-full">
+                            خرید اشتراک
+                        </button>
+                    </div>
+                </div>
+
+                <!-- اشتراک 2 - 33% افزایش -->
+                <div class="price-card" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                    <div class="text-center">
+                        <span class="text-sm bg-white/20 px-3 py-1 rounded-full">نیم بها</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-2">سوپر ویژه نیم بها - پورت ۴۰گیگابیت</h3>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <ul class="feature-list">
+                            <li>مدت اشتراک: ۳۰ روز</li>
+                            <li>حجم ترافیک: ۳۰ گیگابایت</li>
+                            <li>تعداد کاربر: نامحدود</li>
+                            <li>پورت: ۴۰ گیگابیت اختصاصی</li>
+                            <li>بالاترین کیفیت</li>
+                            <li>پشتیبانی VIP</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <div class="price-badge" style="background: linear-gradient(135deg, #ff6b6b 0%, #ffa8a8 100%);">
+                            قیمت: ۱۰۰,۰۰۰ تومان
+                        </div>
+                        <button class="mt-6 bg-white text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all w-full">
+                            خرید اشتراک
+                        </button>
+                    </div>
+                </div>
+
+                <!-- اشتراک 3 - 33% افزایش -->
+                <div class="price-card" style="background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);">
+                    <div class="text-center">
+                        <span class="text-sm bg-white/20 px-3 py-1 rounded-full">سیم کارت سفید</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-2">سوپر ویژه سیم کارت سفید - نیم بها ۶۰گیگ</h3>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <ul class="feature-list">
+                            <li>مدت اشتراک: ۳۰ روز</li>
+                            <li>حجم ترافیک: ۶۰ گیگابایت</li>
+                            <li>تعداد کاربر: نامحدود</li>
+                            <li>مناسب بازار‌های حساس</li>
+                            <li>بدون محدودیت سرعت</li>
+                            <li>آی‌پی ثابت</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <div class="price-badge" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);">
+                            قیمت: ۱۸۶,۰۰۰ تومان
+                        </div>
+                        <button class="mt-6 bg-white text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all w-full">
+                            خرید اشتراک
+                        </button>
+                    </div>
+                </div>
+
+                <!-- اشتراک 4 - 33% افزایش -->
+                <div class="price-card" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                    <div class="text-center">
+                        <span class="text-sm bg-white/20 px-3 py-1 rounded-full">فوق پیشرفته</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-2">سوپر ویژه نیم بها ۹۰گیگ</h3>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <ul class="feature-list">
+                            <li>مدت اشتراک: ۳۰ روز</li>
+                            <li>حجم ترافیک: ۹۰ گیگابایت</li>
+                            <li>تعداد کاربر: نامحدود</li>
+                            <li>پورت اختصاصی ۴۰ گیگابیت</li>
+                            <li>آیپی سیم کارت سفید</li>
+                            <li>بالاترین سرعت در آسیا</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <div class="price-badge" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                            قیمت: ۲۵۹,۰۰۰ تومان
+                        </div>
+                        <button class="mt-6 bg-white text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all w-full">
+                            خرید اشتراک
+                        </button>
+                    </div>
+                </div>
+
+                <!-- اشتراک 5 - 33% افزایش -->
+                <div class="price-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <div class="text-center">
+                        <span class="text-sm bg-white/20 px-3 py-1 rounded-full">بی‌نظیر</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-2">بهترین پورت ۴۰گیگابیت - ۱۵۰گیگ</h3>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <ul class="feature-list">
+                            <li>مدت اشتراک: ۳۰ روز</li>
+                            <li>حجم ترافیک: ۱۵۰ گیگابایت</li>
+                            <li>تعداد کاربر: نامحدود</li>
+                            <li>پورت ۴۰ گیگابیت</li>
+                            <li>سیم کارت سفید</li>
+                            <li>بالاترین پایداری و سرعت</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <div class="price-badge" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            قیمت: ۳۵۲,۰۰۰ تومان
+                        </div>
+                        <button class="mt-6 bg-white text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all w-full">
+                            خرید اشتراک
+                        </button>
+                    </div>
+                </div>
+
+                <!-- اشتراک 6 - 33% افزایش -->
+                <div class="price-card" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                    <div class="text-center">
+                        <span class="text-sm bg-white/20 px-3 py-1 rounded-full">بی‌همتا</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-2">بهترین کانفیگ ایران - ۳۰۰گیگ</h3>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <ul class="feature-list">
+                            <li>مدت اشتراک: ۳۰ روز</li>
+                            <li>حجم ترافیک: ۳۰۰ گیگابایت</li>
+                            <li>تعداد کاربر: نامحدود</li>
+                            <li>پورت اختصاصی</li>
+                            <li>آی‌پی سیم کارت سفید</li>
+                            <li>بالاترین کیفیت و سرعت</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <div class="price-badge" style="background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);">
+                            قیمت: ۵۹۹,۰۰۰ تومان
+                        </div>
+                        <button class="mt-6 bg-white text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all w-full">
+                            خرید اشتراک
+                        </button>
+                    </div>
+                </div>
+
+                <!-- اشتراک 7 - 33% افزایش -->
+                <div class="price-card" style="background: linear-gradient(135deg, #ff8177 0%, #ff867a 100%);">
+                    <div class="text-center">
+                        <span class="text-sm bg-white/20 px-3 py-1 rounded-full">تست</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-2">تست ۱ گیگ</h3>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <ul class="feature-list">
+                            <li>مدت اشتراک: ۱ روز</li>
+                            <li>حجم ترافیک: ۱ گیگابایت</li>
+                            <li>تعداد کاربر: نامحدود</li>
+                            <li>مناسب تست سرعت</li>
+                            <li>تمام سرویس‌ها فعال</li>
+                            <li>پشتیبانی آنلاین</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <div class="price-badge" style="background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);">
+                            قیمت: ۷,۰۰۰ تومان
+                        </div>
+                        <button class="mt-6 bg-white text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all w-full">
+                            خرید اشتراک
+                        </button>
+                    </div>
+                </div>
+
+                <!-- اشتراک 8 - 38% افزایش -->
+                <div class="price-card" style="background: linear-gradient(135deg, #a3bded 0%, #6991c7 100%);">
+                    <div class="text-center">
+                        <span class="text-sm bg-white/20 px-3 py-1 rounded-full">آی‌پی ثابت</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-2">۳ماه ۲۵۰گیگ با آی‌پی ثابت</h3>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <ul class="feature-list">
+                            <li>مدت اشتراک: ۹۰ روز</li>
+                            <li>حجم ترافیک: ۲۵۰ گیگابایت</li>
+                            <li>تعداد کاربر: نامحدود</li>
+                            <li>آی‌پی ثابت</li>
+                            <li>پورت اختصاصی</li>
+                            <li>فوق‌العاده</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <div class="price-badge" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            قیمت: ۶۶۲,۰۰۰ تومان
+                        </div>
+                        <button class="mt-6 bg-white text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all w-full">
+                            خرید اشتراک
+                        </button>
+                    </div>
+                </div>
+
+                <!-- اشتراک 9 - 38% افزایش -->
+                <div class="price-card" style="background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); color: #333;">
+                    <div class="text-center">
+                        <span class="text-sm bg-gray-800/20 px-3 py-1 rounded-full text-gray-800">سرعت ویژه</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-2">۱۵۰گیگ ۳ماهه</h3>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <ul class="feature-list" style="color: #333;">
+                            <li>مدت اشتراک: ۹۰ روز</li>
+                            <li>حجم ترافیک: ۱۵۰ گیگابایت</li>
+                            <li>تعداد کاربر: نامحدود</li>
+                            <li>سرعت فوق ویژه</li>
+                            <li>پورت اختصاصی</li>
+                            <li>بی‌همتا</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <div class="price-badge" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            قیمت: ۴۴۲,۰۰۰ تومان
+                        </div>
+                        <button class="mt-6 bg-gray-900 text-white px-8 py-3 rounded-lg font-bold hover:bg-gray-800 transition-all w-full">
+                            خرید اشتراک
+                        </button>
+                    </div>
+                </div>
+
+                <!-- اشتراک 10 - 38% افزایش -->
+                <div class="price-card" style="background: linear-gradient(135deg, #f83600 0%, #f9d423 100%);">
+                    <div class="text-center">
+                        <span class="text-sm bg-white/20 px-3 py-1 rounded-full">امارات</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-2">۶۰۰گیگ ۶ماهه شبکه امارات</h3>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <ul class="feature-list">
+                            <li>مدت اشتراک: ۱۸۰ روز</li>
+                            <li>حجم ترافیک: ۶۱۴ گیگابایت</li>
+                            <li>تعداد کاربر: نامحدود</li>
+                            <li>شبکه اختصاصی امارات</li>
+                            <li>بدون لگ</li>
+                            <li>سرعت فضایی و پایدار</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <div class="price-badge" style="background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);">
+                            قیمت: ۱,۳۶۶,۰۰۰ تومان
+                        </div>
+                        <button class="mt-6 bg-white text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all w-full">
+                            خرید اشتراک
+                        </button>
+                    </div>
+                </div>
+
+                <!-- اشتراک 11 - 38% افزایش -->
+                <div class="price-card" style="background: linear-gradient(135deg, #0ba360 0%, #3cba92 100%);">
+                    <div class="text-center">
+                        <span class="text-sm bg-white/20 px-3 py-1 rounded-full">یک ساله</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-2">یک ساله هزار گیگ</h3>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <ul class="feature-list">
+                            <li>مدت اشتراک: ۳۶۴ روز</li>
+                            <li>حجم ترافیک: ۱,۰۰۰ گیگابایت</li>
+                            <li>تعداد کاربر: نامحدود</li>
+                            <li>سیم کارت سفید</li>
+                            <li>پورت ۴۰ گیگابیت</li>
+                            <li>قوی‌ترین پورت</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <div class="price-badge" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                            قیمت: ۲,۵۵۳,۰۰۰ تومان
+                        </div>
+                        <button class="mt-6 bg-white text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all w-full">
+                            خرید اشتراک
+                        </button>
+                    </div>
+                </div>
+
+                <!-- اشتراک 12 - 38% افزایش -->
+                <div class="price-card" style="background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);">
+                    <div class="text-center">
+                        <span class="text-sm bg-white/20 px-3 py-1 rounded-full">تانلینگ</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-2">۹۰روز یک ترابایت</h3>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <ul class="feature-list">
+                            <li>مدت اشتراک: ۹۰ روز</li>
+                            <li>حجم ترافیک: ۱,۰۰۰ گیگابایت</li>
+                            <li>تعداد کاربر: نامحدود</li>
+                            <li>پورت ۴۰ گیگ تانلینگ</li>
+                            <li>فوق پیشرفته</li>
+                            <li>بالاترین سرعت در آسیا</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <div class="price-badge" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            قیمت: ۱,۲۴۲,۰۰۰ تومان
+                        </div>
+                        <button class="mt-6 bg-white text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all w-full">
+                            خرید اشتراک
+                        </button>
+                    </div>
+                </div>
+
+                <!-- اشتراک 13 - 33% افزایش -->
+                <div class="price-card" style="background: linear-gradient(135deg, #c2e59c 0%, #64b3f4 100%);">
+                    <div class="text-center">
+                        <span class="text-sm bg-white/20 px-3 py-1 rounded-full">اقتصادی</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-2">نیم بها ۷گیگ</h3>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <ul class="feature-list">
+                            <li>مدت اشتراک: ۳۰ روز</li>
+                            <li>حجم ترافیک: ۷ گیگابایت</li>
+                            <li>تعداد کاربر: نامحدود</li>
+                            <li>نیم بها</li>
+                            <li>مناسب کاربری سبک</li>
+                            <li>سرعت استاندارد</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <div class="price-badge" style="background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);">
+                            قیمت: ۲۰,۰۰۰ تومان
+                        </div>
+                        <button class="mt-6 bg-white text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all w-full">
+                            خرید اشتراک
+                        </button>
+                    </div>
+                </div>
+
+                <!-- اشتراک 14 - 33% افزایش -->
+                <div class="price-card" style="background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);">
+                    <div class="text-center">
+                        <span class="text-sm bg-white/20 px-3 py-1 rounded-full">کوتاه مدت</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-2">نیم بها ۳گیگ</h3>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <ul class="feature-list">
+                            <li>مدت اشتراک: ۷ روز</li>
+                            <li>حجم ترافیک: ۳ گیگابایت</li>
+                            <li>تعداد کاربر: نامحدود</li>
+                            <li>نیم بها</li>
+                            <li>مناسب مسافرت</li>
+                            <li>قیمت مناسب</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <div class="price-badge" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            قیمت: ۱۳,۰۰۰ تومان
+                        </div>
+                        <button class="mt-6 bg-white text-gray-900 px-8 py-3 rounded-lg font-bold hover:bg-gray-100 transition-all w-full">
+                            خرید اشتراک
+                        </button>
+                    </div>
+                </div>
+
+                <!-- اشتراک 15 - 38% افزایش -->
+                <div class="price-card" style="background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%); color: #333;">
+                    <div class="text-center">
+                        <span class="text-sm bg-gray-800/20 px-3 py-1 rounded-full text-gray-800">حرفه‌ای</span>
+                        <h3 class="text-2xl font-bold mt-4 mb-2">یک ساله ۲هزار گیگ</h3>
+                    </div>
+                    
+                    <div class="mt-6">
+                        <ul class="feature-list" style="color: #333;">
+                            <li>مدت اشتراک: ۳۶۵ روز</li>
+                            <li>حجم ترافیک: ۲,۱۵۸ گیگابایت</li>
+                            <li>تعداد کاربر: نامحدود</li>
+                            <li>سیم کارت سفید</li>
+                            <li>پورت ۴۰ گیگابیت</li>
+                            <li>قوی‌ترین پورت دنیا</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="text-center mt-8">
+                        <div class="price-badge" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            قیمت: ۳,۹۳۳,۰۰۰ تومان
+                        </div>
+                        <button class="mt-6 bg-gray-900 text-white px-8 py-3 rounded-lg font-bold hover:bg-gray-800 transition-all w-full">
+                            خرید اشتراک
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- فوتر -->
+        <footer class="mt-16 text-center text-gray-400 text-sm pb-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h4 class="text-white font-bold mb-4">پشتیبانی</h4>
+                    <p>۲۴ ساعته از طریق تیکت</p>
+                    <p>تلگرام: @support</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">روش‌های پرداخت</h4>
+                    <p>کارت‌های بانکی</p>
+                    <p>کیف پول‌های الکترونیکی</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">مشخصات فنی</h4>
+                    <p>پورت‌های ۱ تا ۴۰ گیگابیت</p>
+                    <p>کانفیگ‌های مختلف</p>
+                </div>
+            </div>
+            <p class="border-t border-gray-800 pt-4">
+                تمامی قیمت‌ها به‌روزرسانی شده‌اند | آخرین بروزرسانی: آبان ۱۴۰۴
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
